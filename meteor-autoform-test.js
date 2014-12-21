@@ -26,12 +26,8 @@ People.attachSchema(Schemas.Person);
 
 
 if (Meteor.isClient) {
-Template.registerHelper("Collections", Collections);
+  Template.registerHelper("Collections", Collections);
   Template.registerHelper("Schemas", Schemas);
 }
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+
 
