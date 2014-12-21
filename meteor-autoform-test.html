@@ -1,0 +1,17 @@
+<head>
+  <title>meteor-autoform-test</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+{{#autoForm id="afInsertDemo" type="insert" collection=Collections.People}}{{/autoForm}}
+
+<h1>toto</h1>
+
+  {{> insertPeopleForm}}
+</body>
+
+<template name="insertPeopleForm">
+{{> quickForm collection=Collections.People id="inserPeopleForm" type="insert"}}
+
+</template>
